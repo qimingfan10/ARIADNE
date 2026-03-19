@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and models (large files)
+data/
+pretrained/
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.pkl
+*.pickle
+
+# Training outputs
+work_dirs/
+outputs/
+checkpoints/
+logs/
+*.log
+
+# Cache
+.cache/
+*.cache
+torch_extensions/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# UV
+.venv/
+uv.lock
+
+# DeepSpeed
+deepspeed_*/

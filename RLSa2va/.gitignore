@@ -1,0 +1,243 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/*/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# custom
+checkpoints/
+checkpoints
+data/
+data
+.vscode
+.idea
+.DS_Store
+*.pkl
+*.pkl.json
+*.log.json
+work_dirs
+work_dirs/
+work_dirs_run
+work_dirs_run/
+pretrained
+pretrained/
+temp_*/
+OUTPUT/
+DEV_README.md
+tmp_data/
+
+# Pytorch
+*.pth
+*.py~
+*.sh~
+
+# srun
+*.out
+batchscript-*
+
+# local tools
+local_tools/
+outputs/
+
+logs/
+config.json
+quick_test_output/
+
+# ============================================
+# Sa2VA项目特定忽略（大文件）
+# ============================================
+
+# 模型权重（托管在HuggingFace）
+models/*.safetensors
+models/*.bin
+models/*/*.safetensors
+models/*/*.bin
+models/*/pytorch_model*.bin
+models/*/model*.safetensors
+
+# 训练输出
+work_dirs/
+*.pth
+*.ckpt
+
+# 预训练权重
+pretrained/
+Sa2VA-26B.pth
+sam2_*.pt
+
+# 数据集（太大，需要单独下载）
+data/*/images/
+data/*/masks/
+Segment_DATA_Merged_512/
+
+# 评估结果
+evaluation_*_results/
+*_results/
+video_prediction_*/
+predictions_*/
+inference_results*/
+
+# 视频文件
+*.mp4
+*.avi
+*.mov
+
+# 大型压缩文件
+*.tar.gz
+*.zip
+*.tar
+*.bz2
+micromamba.tar.bz2
+
+# 生成的图片（保留文档中的小图）
+coordinate_scaling_verification.png
+
+# 临时文件
+tmp/
+temp/
+.tmp/
+
+# 日志文件
+*.log
+*.log.json
+
+# Jupyter临时
+.ipynb_checkpoints/
+*.ipynb
+
+# uv lock文件（可以重新生成）
+uv.lock
+
+# 第三方库（可以重新下载）
+third_parts/
+bin/
+
+# Demo数据
+demo/data/
+demo/outputs/
+
+# 评估数据
+sa2va_eval/
+comparison_*/
+merged_dataset_predictions/
+
+# LoRA训练输出（权重文件）
+lora_ppo_training/output/
+lora_ppo_training/output_v2/
+lora_ppo_training/*.log
+lora_ppo_training/__pycache__/
+lora_ppo_training/=*
+
+# RL Prompt优化输出
+rl_prompt_optimization/outputs/
+rl_prompt_optimization/evaluations/
+rl_prompt_optimization/logs/
+rl_prompt_optimization/*.log
+rl_prompt_optimization/__pycache__/
+rl_prompt_optimization/env/
+
+# 视频数据
+Segment_DATA_Videos_512/
+
+# 其他大文件
+*.safetensors
+*.bin
+*.pth
+*.pt
